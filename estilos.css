@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Outfit", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root {
+  --primary: #e5243b;
+  --secondary: #ff6b6b;
+  --tertiary: #fdcb6e;
+  --texto: #2d3436;
+  --fondo: #fafafa;
+  --fondo_2: #ecebe8; /* Para cards y otras cosas */
+  --blanco: #f5f6fa; /* Para texto en blanco */
+}
+body{
+    background-color: var(--fondo) ;
+    color: var(--texto);
+}
+/* CELULAR */
+img{
+    max-width: 100%;
+}
+.hidden{
+    display: none;
+}
+.hidden2{
+    display: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary);
+    padding: 1em;
+}
+header img{
+    width: 2em;
+}
+h1{
+    font-size: 3em;
+}
+.accent{
+    color: var(--primary);
+}
+#img_fondo{
+    background-image: url(img/edwin-andrade-4V1dC_eoCwg-unsplash.jpg);
+    background-position: bottom;
+    background-size: cover;
+    padding: 4em 2em 12em 2em;
+    color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+}
+
+#card_1{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--texto);
+    color: var(--blanco);
+    text-align: center;
+    padding: 3em;
+    margin: 0.2em;
+    border-radius: 2.5em;
+}
+#card_1 p{
+    margin: 1em;
+}
+#formulario_1{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 1em;
+}
+#formulario_1 label{
+    font-weight: 150;
+}
+#formulario_1 input{
+    background-color: var(--fondo_2);
+    padding: 1em 1.1em;
+    border: 1px solid transparent;
+    border-radius: 0.5em;
+    outline: none;
+    flex-grow: 1;
+}
+#formulario_1 input:focus{
+    border: 1px solid var(--secondary);
+}
+#formulario_1 select{
+    background-color: var(--fondo_2);
+    padding: 1em 1.1em;
+    border: 1px solid transparent;
+    border-radius: 0.5em;
+    outline: none;
+    flex-grow: 1;
+}
+#formulario_1 button{
+    display: block;
+    width: 7em;
+    padding: 1em 1.2em;
+    border-radius: 0.5em;
+    border: 1px solid transparent;
+    background-color: var(--primary);
+    font-weight: bold;
+    color: var(--blanco);
+}
+#formulario_1 button:hover{
+    background-color: var(--secondary);
+}
+
+#seccion_1{
+    margin-top: 5em;
+    background-color: var(--fondo_2);
+    margin-bottom: 5em;
+}
+#seccion_1 a{
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    width: 12em;
+    padding: 0.5em 0.5em;
+    border-radius: 0.5em;
+    border: 1px solid transparent;
+    background-color: var(--primary);
+    font-weight: bold;
+    color: var(--blanco);
+}
+#seccion_1 a:hover{
+    background-color: var(--secondary);
+}
+#seccion_1 div:nth-of-type(1) { 
+    min-width: 344px;
+    min-height: 375px;
+    padding-top: 4.9em;
+    padding-bottom: 4.9em;
+    background-color: var(--secondary);
+}
+#seccion_1 div:nth-of-type(5) { 
+    min-width: 344px;
+    min-height: 375px;
+    padding-top: 4.9em;
+    padding-bottom: 4.9em;
+    background-color: var(--tertiary);
+}
+#seccion_1 div:nth-of-type(2) img,div:nth-of-type(6) img{
+    min-height: 100%;
+    max-width: 100%;
+}
+#seccion_1 div:nth-of-type(2),div:nth-of-type(6){
+    max-width: 100%;
+    min-height: fit-content;
+    
+}
+#seccion_1 div:nth-of-type(3) {
+    min-height: 379px;
+    align-content: center;
+    padding: 0 1.5em 0 1.5em;
+}
+#seccion_1 div:nth-of-type(3) h3{
+    margin-bottom: 1em;
+} 
+
+#noticias{
+    margin-bottom: 4em;
+}
+h2{
+    font-size: 2.5em;
+    margin: 1em;
+}
+#card_2{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin: auto;
+}
+#card_2 article{
+    max-width: 95%;
+    margin: 0 auto;
+    background-color: var(--fondo_2);
+    border-radius: 0.5em;
+    padding: 1em 1.5em 2em 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+}
+#card_2 article a{
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    width: 10em;
+    padding: 0.5em 0.5em;
+    border-radius: 0.5em;
+    border: 1px solid transparent;
+    background-color: var(--primary);
+    font-weight: bold;
+    color: var(--blanco);
+}
+#card_2 article a:hover{
+    background-color: var(--secondary);
+}
+footer{
+    background-color: var(--texto);
+    color: var(--blanco);
+    padding: 3em 0 2em 0;
+}
+footer h2{
+    margin:0 0 2em 1em ;
+}
+footer a{
+    text-decoration: none;
+    color: var(--secondary);
+    font-weight: bold;
+    margin-left: 2.5em;
+}
+footer a:hover{
+    color: var(--primary);
+}
+#flex_foot{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+/* TABLET */
+
+@media all and (min-width: 768px) {
+    
+    .hidden{
+        display: block;
+    }
+    #hamburguesa{
+        display: none;
+    }
+    header a{
+        text-decoration: none;
+        color: var(--blanco);
+        font-weight: bold;
+    }
+    header a:hover{
+        color: var(--tertiary);
+    }
+    header nav{
+        display: flex;
+        gap: 2em;
+    }
+
+    #formulario_1{
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+    align-items: center;
+    gap: 1em;
+    justify-content: center;
+    }
+
+    #seccion_1{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        
+    }
+    #seccion_1 div:nth-of-type(4) {
+        background-color: var(--fondo);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 2em;
+        grid-column: span 2;
+        background-color: var(--texto);
+        color: var(--blanco);
+        }
+    #seccion_1 div:nth-of-type(3) {
+        grid-row: span 2;
+        grid-row: 1;
+        grid-column: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    #card_2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 232px 232px;
+        gap: 1.2em;
+    }
+    #card_2 article{
+        justify-content: space-between;
+    }
+    #card_2 article:nth-of-type(3) {
+        grid-row: span 2;
+    }
+
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    footer h2{
+        margin-left: 0.67em;
+        margin-bottom: 0;
+    }
+    #flex_foot{
+        flex-direction: row;
+        gap: 0.8em;
+        margin-right: 0.67em;
+        text-align: center;
+    }
+}   
+
+/* DESKTOP */
+
+@media all and (min-width: 1200px){
+
+    .hidden2{
+        display: block;
+    }
+
+    header{
+        padding-bottom: 2em;
+        padding-top: 2em;
+    }
+    header img{
+        width: 3.5em;
+    }
+    header a{
+        font-size: 1.2em;
+    }
+    #img_fondo h1{
+        max-width: 800px;
+    }
+    #img_fondo p{
+        max-width: 700px;
+    }
+    #img_fondo{
+        padding-bottom: 20em;
+    }
+
+    #card_1{
+        width: 400px;
+        padding: 3em 2em ;
+        position: absolute;
+        top: 25em;
+        right: 2em;
+        box-shadow: -5px 5px 10px  black;
+    }
+    #formulario_1{
+        flex-direction: column;
+        gap: 0.7em;
+        align-items: stretch;
+    }
+
+    #seccion_1{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-auto-flow: column;
+    }
+    #seccion_1 div:nth-of-type(3){
+        grid-row: span 2;
+        justify-content: center;
+        background-color: var(--texto);
+        color: var(--blanco);
+    }
+    #seccion_1 div:nth-of-type(4){
+        background-color: var(--fondo_2);
+        color: var(--texto);
+    }
+    #noticias{
+        max-width: 1150px;
+        display: flex;
+        flex-direction: column;
+        margin: 4em auto;
+    }
+    #card_2{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0;
+        justify-content: center;
+        gap: 2em;
+    }
+
+    #card_2 article{
+        max-width: 30%;
+        margin: 0;
+        position: relative;
+    }
+
+    .nuevo{
+        background-color: var(--tertiary);
+        color: var(--texto);
+        padding: 0.5em 3em;
+        position: absolute;
+        top: -0.3em;
+        right: -0.5em;
+        font-weight: bold;
+    }
+
+    footer{
+        padding-right: 3em;
+        justify-content: flex-end;
+        gap: 4em;
+    }
+}
