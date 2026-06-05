@@ -133,6 +133,9 @@ h1{
 #seccion_1 a:hover{
     background-color: var(--secondary);
 }
+#seccion_1 div img{
+    display: block;
+}
 #seccion_1 div:nth-of-type(1) { 
     min-width: 21.5em;
     min-height: 23.4em;
@@ -384,13 +387,11 @@ footer a:hover{
         justify-content: center;
         gap: 2em;
     }
-
     #card_2 article{
         max-width: 30%;
         margin: 0;
         position: relative;
     }
-
     .nuevo{
         background-color: var(--tertiary);
         color: var(--texto);
